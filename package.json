@@ -1,0 +1,40 @@
+{
+  "name": "tag2cloud",
+  "version": "1.0.0",
+  "description": "make the tags cloud",
+  "main": "./dist/index.js",
+  "types": "dist/tag2cloud.d.ts",
+  "devDependencies": {
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wlwywlqk/tag2cloud.git"
+  },
+  "keywords": [
+    "tag",
+    "cloud",
+    "canvas",
+    "wordcloud",
+    "tagcloud",
+    "tag2cloud",
+    "tag cloud",
+    "word cloud"
+  ],
+  "author": "wlwywlqk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wlwywlqk/tag2cloud/issues"
+  },
+  "homepage": "https://github.com/wlwywlqk/tag2cloud#readme",
+  "dependencies": {},
+  "files": [
+    "dist/",
+    "src/"
+  ]
+}
