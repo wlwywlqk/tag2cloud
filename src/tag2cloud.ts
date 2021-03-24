@@ -144,9 +144,9 @@ export class Tag2Cloud {
         this.initPixels();
     }
 
-    public destory() {
+    public destroy() {
         if (this.$container) {
-            this.$container.removeChild(this.$canvas);
+            this.$container.innerHTML = '';
         }
     }
 
