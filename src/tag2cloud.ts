@@ -21,6 +21,7 @@ export interface Tag {
     weight: number;
     angle?: number;
     color?: string;
+    [prop: string]: any;
 }
 
 export interface Pixels {
@@ -35,6 +36,7 @@ export interface TagData extends Required<Tag> {
     x: number;
     y: number;
     rendered: boolean;
+    tag: Tag;
 }
 
 const ZERO_STR = "00000000000000000000000000000000";
@@ -276,6 +278,7 @@ export class Tag2Cloud {
             $tag.style.fontFamily = `${this.options.family}`;
             $tag.style.whiteSpace = "pre";
 
+            $tag.dataset.tag2cloud = current.text;
             $tag.classList.add("tag2cloud__tag");
             $tag.addEventListener("click", this.click.bind(this, current));
         }
@@ -366,6 +369,7 @@ export class Tag2Cloud {
         });
 
         const result: TagData = {
+            tag,
             text,
             weight,
             fontSize,
