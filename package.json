@@ -1,6 +1,6 @@
 {
   "name": "tag2cloud",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "make the tags cloud",
   "main": "./dist/index.js",
   "types": "dist/tag2cloud.d.ts",
